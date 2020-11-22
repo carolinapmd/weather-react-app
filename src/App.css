@@ -1,1 +1,26 @@
+.App {
+  font-family: "BenchNine", sans-serif;
 
+}
+
+.App header img {
+  height: 100px;
+  margin: 5px 50px;
+}
+
+.App .container h1 {
+  color: #2b8298;
+  margin: 15px auto;
+  font-weight: bold;
+}
+
+.App .container hr {
+  color: #83bcca;
+  border: 3px solid #83bcca;
+  padding: 0;
+  margin: 5px auto;
+}
+
+.App footer {
+  font-size: 12px;
+}
