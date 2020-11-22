@@ -31,7 +31,7 @@ export default function App() {
             </div>
           </div>
           </div>
-          <Weather />
+          <Weather defaultCity="New York"/>
           <footer>
             💻This project was coded by {" "}
             <a href="linkedin.com/in/carolina-domingues" target="_blank">Carolina Domingues</a>
