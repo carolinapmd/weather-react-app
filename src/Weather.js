@@ -10,7 +10,7 @@ export default function Weather(props){
 
     function handleResponse(response) {
         setWeatherData({
-            timezone: response.data.timezone,
+            timezone: new Date((Date.now() + response.data.timezone) * 1000),
             city: response.data.name,
             country: response.data.sys.country,
             temperature: response.data.main.temp,
@@ -20,7 +20,7 @@ export default function Weather(props){
             minTemperature: response.data.main.temp_min,
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
-            update: response.data.dt,
+            update: new Date(response.data.dt * 1000),
             icon: response.data.weather[0].icon,
             searched: true
         

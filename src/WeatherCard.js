@@ -1,4 +1,6 @@
 import React from "react";
+import TimeUpdated from "./TimeUpdated"
+import Timezone from "./Timezone"
 
 import "./WeatherCard.css"
 
@@ -9,19 +11,12 @@ export default function WeatherCard(props) {
             <div className="card-body">
                 <div className="row">
                     <div className="col">
-                        <ul>
-                            <li>
-                                Saturday, 21st
-                            </li>
-                            <li>
-                            10:00     
-                           </li>
-                        </ul>
+                        <Timezone date={props.data.timezone} />
                     </div>
                     <div className="col">
                         <ul>
                             <li>
-                                <h5>{props.data.city},</h5>
+                                <h5><small><i class="fas fa-map-marker-alt" /></small>{" "}{props.data.city},</h5>
                             </li>
                             <li>
                                 <h6>{props.data.country}</h6>                           
@@ -61,6 +56,7 @@ export default function WeatherCard(props) {
                         <i className="fas fa-wind"/>
                     </div>
                 </div>
+                <TimeUpdated time={props.data.update} />
             </div>                
         </div>
     </div>     
