@@ -10,7 +10,7 @@ export default function Weather(props){
 
     function handleResponse(response) {
         setWeatherData({
-            timezone: new Date((Date.now() + response.data.timezone) * 1000),
+            timezone: new Date(Date.now() + response.data.timezone*1000),
             city: response.data.name,
             country: response.data.sys.country,
             temperature: response.data.main.temp,
@@ -42,12 +42,17 @@ export default function Weather(props){
         <WeatherCard data={weatherData} />
     </div>);
 
+    function search() {
+        const apiKey= `3a77522093e4f100cfb7df1a8289b1f6`
+        let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${weatherData.city}&appid=${apiKey}&units=metric`
+        axios.get(apiUrl).then(handleResponse)
+
+    }
+
     if (weatherData.searched) {
         return (form) 
     } else {
-        let apiKey= `2e441a46ac7fd97e3ca0c59e6e2a3fcc`
-        let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${weatherData.city}&appid=${apiKey}&units=metric`
-        axios.get(apiUrl).then(handleResponse)
+        search();
 
         return ("Loading...")
         }

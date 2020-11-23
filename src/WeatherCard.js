@@ -1,5 +1,7 @@
 import React from "react";
+
 import TimeUpdated from "./TimeUpdated"
+import WeatherInfo from "./WeatherInfo"
 import Timezone from "./Timezone"
 
 import "./WeatherCard.css"
@@ -14,48 +16,11 @@ export default function WeatherCard(props) {
                         <Timezone date={props.data.timezone} />
                     </div>
                     <div className="col">
-                        <ul>
-                            <li>
-                                <h5><small><i class="fas fa-map-marker-alt" /></small>{" "}{props.data.city},</h5>
-                            </li>
-                            <li>
-                                <h6>{props.data.country}</h6>                           
-                           </li>
-                        </ul>
-                     </div>
-                </div>
-                <div className="visualWeather">
-                    <img src={`http://openweathermap.org/img/wn/${props.data.icon}@2x.png`} alt={props.data.description}/>
-                    <div className="row">
-                        <div className="col temperature">
-                            {Math.round(props.data.temperature)}
-                        </div>
-                        <div className="col temperatureUnits">
-                            <ul>
-                                <li className="units">ºC | ºF</li>
-                                <li className="maxMinTemperature">{Math.round(props.data.minTemperature)} | {Math.round(props.data.maxTemperature)}{"              "}</li>
-                            </ul>
-                        </div>                      
-                    </div>
-                    <p className="card-text">{props.data.description}</p>
-                </div>
-                <div className="row parameters">
-                    <div className="col">
-                        <p>Feels like:</p>
-                        <p><span className="weatherValue">{Math.round(props.data.feelsLike)}</span>ºC</p>
-                        <i className="fas fa-temperature-low" />
-                    </div>
-                    <div className="col">
-                        <p>Humidity:</p>
-                        <p><span className="weatherValue">{props.data.humidity}</span>%</p>
-                        <i className="fas fa-tint"/>
-                    </div>
-                    <div className="col">
-                        <p>Wind:</p>
-                        <p><span className="weatherValue">{Math.round(props.data.wind)}</span> km/h</p>
-                        <i className="fas fa-wind"/>
+                        <h5><small><i className="fas fa-map-marker-alt" /></small>{" "}{props.data.city},</h5>
+                        <h6>{props.data.country}</h6>
                     </div>
                 </div>
+                <WeatherInfo info={props.data} />                
                 <TimeUpdated time={props.data.update} />
             </div>                
         </div>
