@@ -1,0 +1,57 @@
+.WeatherTemperature .visualWeather {
+  text-align: center;
+  margin: 60px 0 20px 0;
+  padding: 0;
+}
+
+.WeatherTemperature .parameters {
+  margin: 0px;
+}
+
+.WeatherTemperature .parameters .col {
+  line-height: 15px;
+  padding: 7px;
+  min-width: 20px;
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.143);
+}
+
+.WeatherTemperature .fa-temperature-low,
+.fa-tint,
+.fa-wind {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-size: 35px;
+  opacity: 0.2;
+}
+
+.WeatherTemperature .weatherValue {
+  font-size: 25px;
+}
+
+.WeatherTemperature .temperature {
+  text-align: right;
+  font-size: 80px;
+  line-height: 80px;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.WeatherTemperature .temperatureUnits {
+  text-align: left;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+.WeatherTemperature .temperatureUnits .maxMinTemperature {
+  position: relative;
+  top: 28px;
+}
+.WeatherTemperature .temperatureUnits .units {
+  position: relative;
+  top: 5px;
+}
