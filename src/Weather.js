@@ -12,6 +12,7 @@ export default function Weather(props){
 
     function handleResponse(response) {
         setWeatherData({
+            timezoneDifference: response.data.timezone,
             timezone: new Date(Date.now() + response.data.timezone*1000),
             city: response.data.name,
             country: response.data.sys.country,

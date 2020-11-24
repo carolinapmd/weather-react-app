@@ -17,13 +17,13 @@ export default function WeatherTemperature(props) {
     }
 
     function fahrenheitTemperature() {
-        return (Math.round(props.celsius* 9/5 + 32))
+        return (Math.round(props.data.temperature* 9/5 + 32))
     }
     function fahrenheitMinTemperature() {
-        return (Math.round(props.min* 9/5 + 32))
+        return (Math.round(props.data.minTemperature* 9/5 + 32))
     }
     function fahrenheitMaxTemperature() {
-        return (Math.round(props.max* 9/5 + 32))
+        return (Math.round(props.data.maxTemperature* 9/5 + 32))
     }
 
     if (unit === "celsius") {
@@ -32,34 +32,34 @@ export default function WeatherTemperature(props) {
                 <div className="visualWeather">
                     <div className="row">
                         <div className="col-7 temperature">
-                            {Math.round(props.celsius)}
+                            {Math.round(props.data.temperature)}
                         </div>
                         <div className="col-5 temperatureUnits">
                             <ul>
                                 <li className="units"><strong>ºC</strong> | <small><a href="/" onClick={convertToFahrenheit}>ºF</a></small></li>
                                 
                                 <li className="maxMinTemperature">
-                                    <FontAwesomeIcon icon="angle-down" /> {Math.round(props.min)}  |  <FontAwesomeIcon icon="angle-up" /> {Math.round(props.max)}{"              "}
+                                    <FontAwesomeIcon icon="angle-down" /> {Math.round(props.data.minTemperature)}  |  <FontAwesomeIcon icon="angle-up" /> {Math.round(props.data.maxTemperature)}{"              "}
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <p className="card-text">{props.description}</p>
+                    <p className="card-text">{props.data.description}</p>
                 </div>
                 <div className="row parameters">
                     <div className="col">
                         <p>Feels like:</p>
-                        <p><span className="weatherValue">{Math.round(props.feelsLike)}</span>ºC</p>
+                        <p><span className="weatherValue">{Math.round(props.data.feelsLike)}</span>ºC</p>
                         <FontAwesomeIcon icon="temperature-low" />
                     </div>
                     <div className="col">
                         <p>Humidity:</p>
-                        <p><span className="weatherValue">{props.humidity}</span>%</p>
+                        <p><span className="weatherValue">{props.data.humidity}</span>%</p>
                         <FontAwesomeIcon icon="tint" />
                     </div>
                     <div className="col">
                         <p>Wind:</p>
-                        <p><span className="weatherValue">{Math.round(props.wind)}</span> km/h</p>
+                        <p><span className="weatherValue">{Math.round(props.data.wind)}</span> km/h</p>
                         <FontAwesomeIcon icon="wind" />
                     </div>
                 </div>
@@ -84,22 +84,22 @@ export default function WeatherTemperature(props) {
                             </ul>
                         </div>                      
                     </div>
-                    <p className="card-text">{props.description}</p>
+                    <p className="card-text">{props.data.description}</p>
                 </div>
                 <div className="row parameters">
                         <div className="col">
                             <p>Feels like:</p>
-                            <p><span className="weatherValue">{Math.round(props.feelsLike * 9/5+32)}</span>ºF</p>
+                            <p><span className="weatherValue">{Math.round(props.data.feelsLike * 9/5+32)}</span>ºF</p>
                             <FontAwesomeIcon icon="temperature-low" />
                         </div>
                         <div className="col">
                             <p>Humidity:</p>
-                            <p><span className="weatherValue">{props.humidity}</span>%</p>
+                            <p><span className="weatherValue">{props.data.humidity}</span>%</p>
                             <FontAwesomeIcon icon="tint" />
                         </div>
                         <div className="col">
                             <p>Wind:</p>
-                            <p><span className="weatherValue">{Math.round(props.wind)}</span> km/h</p>
+                            <p><span className="weatherValue">{Math.round(props.data.wind)}</span> km/h</p>
                             <FontAwesomeIcon icon="wind" />
                         </div>
                 </div>       

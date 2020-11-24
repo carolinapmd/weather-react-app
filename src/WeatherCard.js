@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -29,7 +30,7 @@ export default function WeatherCard(props) {
             }
         } 
     }
-    
+
     return (
     <div className="WeatherCard">
         <div className="card mt-5 mb-5 ">
@@ -46,7 +47,10 @@ export default function WeatherCard(props) {
                     </div>
                     <div className="WeatherInfo">
                         <WeatherIcon code={props.data.icon} alt={props.data.description} />
-                        <WeatherTemperature celsius={props.data.temperature} min= {props.data.minTemperature} max= {props.data.maxTemperature} description={props.data.description} feelsLike={props.data.feelsLike} humidity={props.data.humidity} wind={props.data.wind}/>              
+                        <WeatherTemperature data={props.data} />              
+                    </div>
+                    <div className="WeatherForecast mt-3 mb-2">
+                        <WeatherForecast city={props.data.city} timezoneDifference={props.data.timezoneDifference}/>
                     </div>                
                     <TimeUpdated time={props.data.update} />
                 </div>                

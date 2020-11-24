@@ -1,0 +1,22 @@
+.WeatherForecastSegment .row {
+  margin: auto 0;
+}
+
+.WeatherForecastSegment .col {
+text-align: left;
+padding: 0;
+}
+
+.WeatherForecastSegment .forecastIcons canvas {
+  height: 32px;
+  position: absolute;
+  left: -30px;
+  top: -75px;
+  opacity: 0.8;
+}
+
+
+.WeatherForecastSegment .description {
+    text-align: right;
+    padding: 0;
+}
