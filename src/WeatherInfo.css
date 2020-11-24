@@ -4,14 +4,7 @@
   padding: 0;
 }
 
-.WeatherInfo .visualWeather img {
-  height: 190px;
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  z-index: 5;
-  opacity: 0.5;
-}
+
 
 .WeatherInfo .visualWeather .temperature {
   text-align: right;

@@ -9,10 +9,28 @@
 }
 
 .WeatherCard .card {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   border: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
+  border-radius: 10px;
+}
+
+.WeatherCard .card .sunrise {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  border-radius: 10px;
+  color: rgb(44, 44, 44);
+}
+.WeatherCard .card .day {
+  background-image: linear-gradient(to top, rgb(177, 223, 247) 0%,#f2f9ff 100%);
+  border-radius: 10px;
+  color: rgb(44, 44, 44);
+}
+.WeatherCard .card .sunset {
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  border-radius: 10px;
+}
+.WeatherCard .card .night {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   border-radius: 10px;
   }
 

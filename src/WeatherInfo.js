@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./WeatherInfo.css"
 
@@ -6,7 +7,9 @@ export default function WeatherInfo(props) {
     return (
         <div className="WeatherInfo">      
             <div className="visualWeather">
-                    <img src={`http://openweathermap.org/img/wn/${props.info.icon}@2x.png`} alt={props.info.description}/>
+              
+                <WeatherIcon code={props.info.icon} alt={props.info.description} />
+                
                     <div className="row">
                         <div className="col temperature">
                             {Math.round(props.info.temperature)}
