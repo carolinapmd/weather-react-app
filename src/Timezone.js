@@ -52,7 +52,7 @@ export default function Timezone(props) {
     return (
         <div className="Timezone mt-2">
         <p>{day}, {month} {dateSuffix()}</p>
-        <p>{localTime()}<small> Local ime</small></p>
+        <p>{localTime()}<small> Local Time</small></p>
     </div>
         );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./WeatherInfo.css"
 
 export default function WeatherInfo(props) {
@@ -13,7 +14,7 @@ export default function WeatherInfo(props) {
                         <div className="col temperatureUnits">
                             <ul>
                                 <li className="units">ºC | ºF</li>
-                                <li className="maxMinTemperature">{Math.round(props.info.minTemperature)} | {Math.round(props.info.maxTemperature)}{"              "}</li>
+                                <li className="maxMinTemperature"><FontAwesomeIcon icon="angle-down" /> {Math.round(props.info.minTemperature)}  |  <FontAwesomeIcon icon="angle-up" /> {Math.round(props.info.maxTemperature)}{"              "}</li>
                             </ul>
                         </div>                      
                     </div>
@@ -23,17 +24,17 @@ export default function WeatherInfo(props) {
                     <div className="col">
                         <p>Feels like:</p>
                         <p><span className="weatherValue">{Math.round(props.info.feelsLike)}</span>ºC</p>
-                        <i className="fas fa-temperature-low" />
+                        <FontAwesomeIcon icon="temperature-low" />
                     </div>
                     <div className="col">
                         <p>Humidity:</p>
                         <p><span className="weatherValue">{props.info.humidity}</span>%</p>
-                        <i className="fas fa-tint"/>
+                        <FontAwesomeIcon icon="tint" />
                     </div>
                     <div className="col">
                         <p>Wind:</p>
                         <p><span className="weatherValue">{Math.round(props.info.wind)}</span> km/h</p>
-                        <i className="fas fa-wind"/>
+                        <FontAwesomeIcon icon="wind" />
                     </div>
             </div>
         </div>

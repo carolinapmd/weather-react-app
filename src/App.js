@@ -1,4 +1,5 @@
 import React from "react";
+import "./Fontawesome";
 import Weather from "./Weather"
 import logo from "./img/3.png";
 import './App.css';
@@ -32,7 +33,7 @@ export default function App() {
           </div>
           </div>
           <Weather defaultCity="New York"/>
-          <footer>
+          <footer className="mt-5">
             💻This project was coded by {" "}
             <a href="linkedin.com/in/carolina-domingues" target="_blank">Carolina Domingues</a>
             , and is open-sourced on{" "}
