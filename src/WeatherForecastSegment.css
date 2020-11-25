@@ -1,5 +1,6 @@
 .WeatherForecastSegment .row {
-  margin: auto 0;
+  margin: 0 10px;
+  max-width: 240px;
 }
 
 .WeatherForecastSegment .col {
@@ -7,16 +8,25 @@ text-align: left;
 padding: 0;
 }
 
+.WeatherForecastSegment .time {
+  font-style: bold;
+}
+
 .WeatherForecastSegment .forecastIcons canvas {
-  height: 32px;
+  height: 25px;
   position: absolute;
-  left: -30px;
+  left: -10px;
   top: -75px;
   opacity: 0.8;
 }
 
 
+
 .WeatherForecastSegment .description {
     text-align: right;
     padding: 0;
+}
+
+.WeatherForecastSegment .description::first-letter {
+  text-transform: capitalize;
 }

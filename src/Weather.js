@@ -31,7 +31,7 @@ export default function Weather(props){
             }
 
             function search() {
-                const apiKey= `3a77522093e4f100cfb7df1a8289b1f6`
+                const apiKey= `5f472b7acba333cd8a035ea85a0d4d4c`
                 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
                 axios.get(apiUrl).then(handleResponse)
             }
@@ -45,19 +45,21 @@ export default function Weather(props){
         setCity(event.target.value)
     }
 
-    let form =  (<div className="Weather">
-        <form onSubmit={handleSubmit}>
-            <div className="row">
-                <div className="col-9">
-            <input type="search" className="form-control" autoFocus="on" placeholder="Enter a city..." onChange={handleCityChange}/>
+    let form =  (
+    <div className="Weather col">
+            <form onSubmit={handleSubmit}>
+                <div className="row">
+                    <div className="col-9">
+                        <input type="search" className="form-control" autoFocus="on" placeholder="Enter a city..." onChange={handleCityChange}/>
+                    </div>
+                    <div className="col-3">
+                        <input type="submit" className="btn btn-info " value="Search" />                        
+                    </div>
                 </div>
-                <div className="col-3">
-            <input type="submit" className="btn btn-info " value="Search" />
-                </div>
-            </div>
-        </form>
-        <WeatherCard data={weatherData} />
-    </div>);
+            </form>
+            <WeatherCard data={weatherData} />
+        </div>
+    );
 
 
     
@@ -66,6 +68,10 @@ export default function Weather(props){
         return (form) 
     } else {
         search();
-        return (<FontAwesomeIcon icon="spinner" pulse size={"3x"} />)
-        }
+        return (
+        <div className="Weather col">
+          <FontAwesomeIcon icon="spinner" pulse size={"3x"} />
+        </div>
+        );
+    }
 }

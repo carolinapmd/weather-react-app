@@ -1,4 +1,5 @@
 import React from "react";
+import TimeUpdated from "./Time"
 import "./Timezone.css"
 
 export default function Timezone(props) {
@@ -38,15 +39,8 @@ export default function Timezone(props) {
   }
 }
   function localTime() {
-      let hours = props.date.getHours();
-          if (hours<10) {
-              hours = `0${props.date.getHours()}`
-          }
-          let minutes = props.date.getMinutes();
-              if (minutes<10) {
-                  minutes = `0${props.date.getMinutes()}`
-              }
-          return (`${hours}:${minutes}`)
+    return <TimeUpdated time={props.date} />  
+    
   }
 
     return (

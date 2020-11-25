@@ -17,8 +17,9 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.143);
 }
+
 .WeatherTemperature .parameters .col:hover {
-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .WeatherTemperature .fa-temperature-low,
@@ -50,6 +51,11 @@ box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
 }
+
+.WeatherTemperature a {
+  color: rgb(245, 245, 245);
+}
+
 .WeatherTemperature .temperatureUnits .maxMinTemperature {
   position: relative;
   top: 28px;

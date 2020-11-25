@@ -5,7 +5,7 @@ import WeatherForecast from "./WeatherForecast"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import TimeUpdated from "./TimeUpdated"
+import Time from "./Time"
 import Timezone from "./Timezone"
 
 import "./WeatherCard.css"
@@ -19,8 +19,11 @@ export default function WeatherCard(props) {
        if (timezone >= 5 && timezone < 8) {
            return ("sunrise")
         } else {
-            if (timezone >= 8 && timezone < 18) {
-                return ("day")
+            if (timezone >= 8 && timezone < 12) {
+                return ("morning")
+            } else { 
+            if (timezone >= 12 && timezone < 18) {
+                return ("afternoon")
             } else { 
                 if (timezone >= 18 && timezone < 20) {
                     return ("sunset")
@@ -30,10 +33,11 @@ export default function WeatherCard(props) {
             }
         } 
     }
+}
 
     return (
     <div className="WeatherCard">
-        <div className="card mt-5 mb-5 ">
+        <div className="card mt-2 mb-5 ">
             <div className={sky()}>           
                 <div className="card-body">
                     <div className="row">
@@ -52,7 +56,7 @@ export default function WeatherCard(props) {
                     <div className="WeatherForecast mt-3 mb-2">
                         <WeatherForecast city={props.data.city} timezoneDifference={props.data.timezoneDifference}/>
                     </div>                
-                    <TimeUpdated time={props.data.update} />
+                    Last updated at <Time time={props.data.update} /> (UTC)
                 </div>                
             </div>
         </div>

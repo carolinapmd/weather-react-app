@@ -1,4 +1,10 @@
+.Weather col-9, col-3 {
+padding-right: 0;
+padding-left: 0;
+}
+
 .Weather form {
-    margin: 0 auto;
-    max-width: 300px;
+    text-align: center;
+    max-width: 260px;
+    margin-left: 15px;
 }

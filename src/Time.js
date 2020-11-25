@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TimeUpdated(props) {
+export default function Time(props) {
     let hours = props.time.getHours();
     if (hours<10) {
         hours = `0${props.time.getHours()}`
@@ -9,5 +9,5 @@ export default function TimeUpdated(props) {
         if (minutes<10) {
             minutes = `0${props.time.getMinutes()}`
         }
-    return (`Last updated at ${hours}:${minutes} (UTC)`)
+    return (`${hours}:${minutes}`)
 }
