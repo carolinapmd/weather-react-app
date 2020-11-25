@@ -2,6 +2,7 @@ import React from "react";
 import "./Fontawesome";
 import Weather from "./Weather"
 import PlusCity from "./PlusCity"
+
 import logo from "./img/3.png";
 import './App.css';
 
@@ -34,12 +35,8 @@ export default function App() {
             </div>
           </div>
           <div className = "weatherSection row">
-            <div className="col">
-            <Weather defaultCity="Mexico City"/>
-            </div>
-            <div className="col">
-            <PlusCity defaultCity=" "/>
-            </div>
+            <Weather defaultCity="Tehran"/>
+            <PlusCity  defaultCity="Paris"/>
           </div>
           
           <footer className="mt-5">
@@ -47,6 +44,7 @@ export default function App() {
             <a href="linkedin.com/in/carolina-domingues" target="_blank">Carolina Domingues</a>
             , and is open-sourced on{" "}
             <a href="https://github.com/carolinapmd/weather-react-app" target="_blank"> GitHub.</a>
+             <a href='https://pngtree.com/free-backgrounds'>free background photos frompngtree.com</a>
           </footer>
       </div>
     </div>

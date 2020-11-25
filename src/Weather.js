@@ -3,7 +3,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import axios from "axios"
 import WeatherCard from "./WeatherCard";
 
+
 import "./Weather.css"
+
 
 
 export default function Weather(props){
@@ -31,7 +33,7 @@ export default function Weather(props){
             }
 
             function search() {
-                const apiKey= `5f472b7acba333cd8a035ea85a0d4d4c`
+                const apiKey= `76184a71275816c9e0d0b09aa75a7bcf`
                 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
                 axios.get(apiUrl).then(handleResponse)
             }
@@ -46,7 +48,7 @@ export default function Weather(props){
     }
 
     let form =  (
-    <div className="Weather col">
+    
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-9">
@@ -57,20 +59,30 @@ export default function Weather(props){
                     </div>
                 </div>
             </form>
-            <WeatherCard data={weatherData} />
-        </div>
+            
+    
     );
 
 
     
 
     if (weatherData.searched) {
-        return (form) 
+        return (
+            <div className="Weather col">
+              
+                    {form} 
+                    <WeatherCard data={weatherData} />
+              
+                   
+                
+            </div>
+        );
     } else {
         search();
         return (
         <div className="Weather col">
           <FontAwesomeIcon icon="spinner" pulse size={"3x"} />
+          
         </div>
         );
     }

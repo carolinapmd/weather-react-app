@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import Weather from "./Weather";
+
 import "./PlusCity.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -6,24 +8,39 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./Weather.css"
 
 
-export default function PlusCity(){
-    const [loaded, setLoaded] = useState(false)
+export default function PlusCity(props){
+    const [clicked, setClicked] = useState(false)
 
-   return(
-       <div className="Weather">   
+    function addCityCard(event) {
+        event.preventDefault();
+        setClicked(true);
+    }
+    
+    if (clicked) {
+        return ( <div className="PlusCity">
+            
 
-       <div className="PlusCity col">
-           <div className="card-body">
-            <form>
-                <input type="search" className="form-control" autoFocus="on" placeholder="Enter another city..." />
-                <button type="submit" className="btn btn-light mt-1"><FontAwesomeIcon icon="plus" />                   
-                </button>
-            </form>           
-           </div>
+            <Weather defaultCity={props.defaultCity}/>
+            
+            <div className="col">
+                <div className="card-body">
+                        <button type="button" className="btn btn-light mt-1" onClick={addCityCard}><FontAwesomeIcon icon="plus" />
+                        </button>                               
+                    </div>
+            </div>
         </div>
-       </div>
-       )
-    ;
+        );
+    } else {
+        return(
+            <div className="PlusCity col">
+                    <div className="card-body">
+                        <button type="button" className="btn btn-light mt-1" onClick={addCityCard}><FontAwesomeIcon icon="plus" />
+                        </button>                               
+                    </div>
+            </div>
+            )
+            ;
+        }
 
-
+        
 }
