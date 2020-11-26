@@ -52,10 +52,6 @@
   z-index: 10;
 }
 
-.WeatherTemperature a {
-  color: rgb(245, 245, 245);
-}
-
 .WeatherTemperature .temperatureUnits .maxMinTemperature {
   position: relative;
   top: 28px;
@@ -63,4 +59,19 @@
 .WeatherTemperature .temperatureUnits .units {
   position: relative;
   top: 5px;
+}
+
+.WeatherTemperature button {
+  color: rgb(245, 245, 245);
+  height: 16px;
+  width: 28px;
+  border-radius: 20px;
+  line-height: 0.5;
+  border-color: rgb(189, 189, 189);
+  position: relative;
+  top: -1px;
+}
+
+.WeatherTemperature button:hover {
+  background-color: rgba(189, 189, 189, 0.17);
 }

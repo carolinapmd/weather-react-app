@@ -37,7 +37,7 @@ export default function WeatherTemperature(props) {
                         </div>
                         <div className="col-5 temperatureUnits">
                             <ul>
-                                <li className="units"><strong>ºC</strong> | <small><a href="/" onClick={convertToFahrenheit}>ºF</a></small></li>
+                                <li className="units"><strong>ºC</strong> | <small><button className="btn btn-outline-secondary btn-sm" onClick={convertToFahrenheit}>ºF</button></small></li>
                                 
                                 <li className="maxMinTemperature">
                                     <FontAwesomeIcon icon="angle-down" /> {Math.round(props.data.minTemperature)}  |  <FontAwesomeIcon icon="angle-up" /> {Math.round(props.data.maxTemperature)}{"              "}
@@ -81,7 +81,7 @@ export default function WeatherTemperature(props) {
                         </div>
                         <div className="col-5 temperatureUnits">
                             <ul>
-                            <li className="units"><strong>ºF</strong> | <small><a href="/" onClick={convertToCelsius}>ºC</a></small></li>
+                            <li className="units"><strong>ºF</strong> | <small><button className="btn btn-outline-secondary btn-sm" onClick={convertToCelsius}>ºC</button></small></li>
                                 <li className="maxMinTemperature">
                                     <FontAwesomeIcon icon="angle-down" /> {fahrenheitMinTemperature()}  |  <FontAwesomeIcon icon="angle-up" /> {fahrenheitMaxTemperature()}{"              "}
                                 </li>
