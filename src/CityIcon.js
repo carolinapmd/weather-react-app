@@ -10,6 +10,13 @@ export default function CityIcon(props) {
         "Tokyo": Tokyo
     }
 
+    let urlCode = ["Delphi","Tokyo"]
+    
+    urlCode.forEach(element => { console.log(`./img/png/${element}.png`)
+        
+    });
+
+
     let CityIcon = cityMapping[props.city]
 
        if(CityIcon) {

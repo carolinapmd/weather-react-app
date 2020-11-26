@@ -38,9 +38,23 @@ export default function App() {
           </div>
           <div className = "weatherSection row">
             <div className = "col">
-            <Weather defaultCity="Tokyo"/>
+            <Weather defaultCity="London"/>
             </div>
-            <AddCity  defaultCity="Paris"/>
+            <div className = "col">
+            <AddCity  defaultCity="Dubai"/>
+            </div>
+            <div className = "col">
+            <AddCity  defaultCity="Beijing"/>
+            </div>
+            <div className = "col">
+            <AddCity  defaultCity="Honolulu"/>
+            </div>
+            <div className = "col">
+            <AddCity  defaultCity="Anchorage"/>
+            </div>
+            <div className = "col">
+            <AddCity  defaultCity="New York"/>
+            </div>
           </div>
           
           <footer className="mt-5">
@@ -51,7 +65,7 @@ export default function App() {
             <a href="https://github.com/carolinapmd/weather-react-app" target="_blank" rel="noreferrer"> GitHub.</a>
             </p>
             <small>
-            <a href='https://pngtree.com/free-backgrounds'>Free background photos frompngtree.com</a> | City Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            City Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </small>
                     
           </footer>

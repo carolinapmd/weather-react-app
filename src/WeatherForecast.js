@@ -17,7 +17,7 @@ export default function WeatherForecast(props) {
 
     if (loaded && props.city === forecast.city.name) {
         
-        console.log(forecast)
+        
         return (
         <div className="WeatherForecast">
             <WeatherForecastSegment list={forecast.list[0]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>

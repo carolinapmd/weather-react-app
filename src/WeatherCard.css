@@ -17,19 +17,19 @@
 
 .WeatherCard .card .sunrise {
   background-image: linear-gradient(
-    to top,
-    #006692 0%,
-    #ffe3a4 20%,
-    #f5a67e 100%
+    to bottom,
+    #1b80ac 0%,
+    #ffe29e 30%,
+    #ffcc56 50%,
+    #ee6e2e 100%
   );
   border-radius: 10px;
-  color: rgb(35, 35, 35);
 }
 .WeatherCard .card .morning {
   background-image: linear-gradient(
     to top,
-    #a4dacb 0%,
-    #92e2ff 20%,
+    #1b80ac 0%,
+    #92e2ff 50%,
     #e5f5fd 100%
   );
   border-radius: 10px;
