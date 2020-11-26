@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export default function Time(props) {
     let hours = props.time.getHours();
