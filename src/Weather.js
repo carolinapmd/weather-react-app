@@ -5,6 +5,7 @@ import WeatherCard from "./WeatherCard";
 
 
 import "./Weather.css"
+import { faSortNumericUp } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -47,17 +48,37 @@ export default function Weather(props){
         setCity(event.target.value)
     }
 
-    let form =  (    
-            <form onSubmit={handleSubmit}>
-                <div className="row">
-                    <div className="col-9">
-                        <input type="search" className="form-control" autoFocus="on" placeholder="Enter a city..." onChange={handleCityChange}/>
+    function showPosition(position) {
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        const apiKey= `76184a71275816c9e0d0b09aa75a7bcf`
+        let apiUrl=`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`
+        axios.get(apiUrl).then(handleResponse)
+    }
+
+    function getCurrentLocation(event) {
+        event.preventDefault();
+        navigator.geolocation.getCurrentPosition(showPosition)
+    }
+
+    let form =  (   
+        <div className="searchEngine row">
+            <div className="col-10">
+                <form onSubmit={handleSubmit}>
+                    <div className="row">
+                            <div className="col-9">
+                                <input type="search" className="form-control" autoFocus="on" placeholder="Enter a city..." onChange={handleCityChange}/>
+                            </div>
+                            <div className="col-3">
+                                <button type="submit" className="btn btn-info" >Search</button>                         
+                            </div>
                     </div>
-                    <div className="col-3">
-                        <input type="submit" className="btn btn-info " value="Search" />                        
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div className="col-2">
+                <button className="btn btn-info " title="Geolocation" onClick={getCurrentLocation}><FontAwesomeIcon icon="compass" /></button>                      
+            </div>
+        </div>
     );
 
     if (weatherData.searched) {

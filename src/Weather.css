@@ -1,14 +1,24 @@
-.Weather {
-    display: inline;
+.Weather,
+.Weather .WeatherCard,
+.Weather .searchEngine {
+  margin: 0 auto;
 }
 
-.Weather col-9, col-3 {
-padding-right: 0;
-padding-left: 0;
+.Weather .searchEngine {
+    max-width: 300px;
+}
+
+.Weather form .col-10,
+.Weather form .col-9,
+.Weather form .col-8,
+.Weather form .col-3,
+.Weather form .col-2, .Weather .searchEngine .col-2 {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .Weather form {
-    text-align: center;
-    max-width: 260px;
-    margin-left: 15px;
+  text-align: center;
+  max-width: 260px;
+  margin-left: 15px;
 }

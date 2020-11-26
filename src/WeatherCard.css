@@ -19,21 +19,21 @@
   background-image: linear-gradient(
     to bottom,
     #1b80ac 0%,
-    #ffe29e 30%,
-    #ffcc56 50%,
-    #ee6e2e 100%
+    #7b5fac 15%,
+    #8f6aae 20%,
+    #a86aa4 30%,
+    #cc6b8e 40%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
   );
   border-radius: 10px;
+  z-index: 0;
 }
 .WeatherCard .card .morning {
-  background-image: linear-gradient(
-    to top,
-    #1b80ac 0%,
-    #92e2ff 50%,
-    #e5f5fd 100%
-  );
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   border-radius: 10px;
-  color: rgb(35, 35, 35);
+  z-index: 0;
 }
 .WeatherCard .card .afternoon {
   background-image: linear-gradient(
@@ -44,13 +44,17 @@
   );
   border-radius: 10px;
   color: rgb(255, 255, 255);
+  z-index: 0;
 }
 .WeatherCard .card .sunset {
   background-image: linear-gradient(to bottom, #ed6ea0 0%, #ec8c69 100%);
+  z-index: 0;
   border-radius: 10px;
 }
 .WeatherCard .card .night {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
+  border-radius: 10px;
+  z-index: 0;
   border-radius: 10px;
 }
 

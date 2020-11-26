@@ -64,14 +64,16 @@
 .WeatherTemperature button {
   color: rgb(245, 245, 245);
   height: 16px;
-  width: 28px;
+  width: 24px;
   border-radius: 20px;
   line-height: 0.5;
-  border-color: rgb(189, 189, 189);
+  border-color:seashell;
   position: relative;
-  top: -1px;
+  top: -2px;
+  padding: 0;
 }
 
 .WeatherTemperature button:hover {
+  border-color:seashell;
   background-color: rgba(189, 189, 189, 0.17);
 }

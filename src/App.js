@@ -47,10 +47,10 @@ export default function App() {
             <AddCity  defaultCity="Beijing"/>
             </div>
             <div className = "col">
-            <AddCity  defaultCity="Honolulu"/>
+            <AddCity  defaultCity="Sydney"/>
             </div>
             <div className = "col">
-            <AddCity  defaultCity="Anchorage"/>
+            <AddCity  defaultCity="Los Angeles"/>
             </div>
             <div className = "col">
             <AddCity  defaultCity="New York"/>
