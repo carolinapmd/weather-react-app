@@ -1,4 +1,5 @@
 import React from "react";
+import "./Fontawesome";
 import Weather from "./Weather"
 import AddCity from "./AddCity"
 
