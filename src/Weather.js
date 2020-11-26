@@ -47,8 +47,7 @@ export default function Weather(props){
         setCity(event.target.value)
     }
 
-    let form =  (
-    
+    let form =  (    
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-9">
@@ -59,22 +58,13 @@ export default function Weather(props){
                     </div>
                 </div>
             </form>
-            
-    
     );
-
-
-    
 
     if (weatherData.searched) {
         return (
-            <div className="Weather col">
-              
+            <div className="Weather col">              
                     {form} 
-                    <WeatherCard data={weatherData} />
-              
-                   
-                
+                    <WeatherCard data={weatherData} />        
             </div>
         );
     } else {
@@ -82,7 +72,6 @@ export default function Weather(props){
         return (
         <div className="Weather col">
           <FontAwesomeIcon icon="spinner" pulse size={"3x"} />
-          
         </div>
         );
     }

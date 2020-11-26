@@ -20,12 +20,12 @@ export default function WeatherForecast(props) {
         console.log(forecast)
         return (
         <div className="WeatherForecast">
-            <WeatherForecastSegment list={forecast.list[0]} timezoneDifference={props.timezoneDifference} />
-            <WeatherForecastSegment list={forecast.list[1]} timezoneDifference={props.timezoneDifference} />
-            <WeatherForecastSegment list={forecast.list[2]} timezoneDifference={props.timezoneDifference} />
-            <WeatherForecastSegment list={forecast.list[3]} timezoneDifference={props.timezoneDifference} />
-            <WeatherForecastSegment list={forecast.list[4]} timezoneDifference={props.timezoneDifference} />
-            <WeatherForecastSegment list={forecast.list[5]} timezoneDifference={props.timezoneDifference} />
+            <WeatherForecastSegment list={forecast.list[0]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>
+            <WeatherForecastSegment list={forecast.list[1]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>
+            <WeatherForecastSegment list={forecast.list[2]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>
+            <WeatherForecastSegment list={forecast.list[3]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>
+            <WeatherForecastSegment list={forecast.list[4]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>
+            <WeatherForecastSegment list={forecast.list[5]} timezoneDifference={props.timezoneDifference} unit={props.unit}/>
                 
         </div>
             );

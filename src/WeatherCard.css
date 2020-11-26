@@ -16,18 +16,33 @@
 }
 
 .WeatherCard .card .sunrise {
-  background-image: linear-gradient(to top, #006692 0%, #FFE3A4 20%, #F5A67E 100%);
+  background-image: linear-gradient(
+    to top,
+    #006692 0%,
+    #ffe3a4 20%,
+    #f5a67e 100%
+  );
   border-radius: 10px;
   color: rgb(35, 35, 35);
 }
 .WeatherCard .card .morning {
-background-image: linear-gradient(to top, #a4dacb 0%, #92e2ff 20%, #e5f5fd 100%);
+  background-image: linear-gradient(
+    to top,
+    #a4dacb 0%,
+    #92e2ff 20%,
+    #e5f5fd 100%
+  );
   border-radius: 10px;
   color: rgb(35, 35, 35);
 }
 .WeatherCard .card .afternoon {
-  background-image: linear-gradient(-225deg, #eaebd2 0%, #7ddaf1 20%, #87b0d9 100%);
-    border-radius: 10px;
+  background-image: linear-gradient(
+    -225deg,
+    #eaebd2 0%,
+    #7ddaf1 20%,
+    #87b0d9 100%
+  );
+  border-radius: 10px;
   color: rgb(255, 255, 255);
 }
 .WeatherCard .card .sunset {

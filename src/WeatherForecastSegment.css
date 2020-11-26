@@ -4,8 +4,8 @@
 }
 
 .WeatherForecastSegment .col {
-text-align: left;
-padding: 0;
+  text-align: left;
+  padding: 0;
 }
 
 .WeatherForecastSegment .time {
@@ -20,11 +20,9 @@ padding: 0;
   opacity: 0.8;
 }
 
-
-
 .WeatherForecastSegment .description {
-    text-align: right;
-    padding: 0;
+  text-align: right;
+  padding: 0;
 }
 
 .WeatherForecastSegment .description::first-letter {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import WeatherForecast from "./WeatherForecast"
 
 import "./WeatherTemperature.css"
 
@@ -63,6 +64,9 @@ export default function WeatherTemperature(props) {
                         <FontAwesomeIcon icon="wind" />
                     </div>
                 </div>
+                <div className="WeatherForecast mt-3 mb-2">
+                        <WeatherForecast unit="celsius" city={props.data.city} timezoneDifference={props.data.timezoneDifference}/>
+                </div> 
             </div>
         );
 
@@ -102,7 +106,10 @@ export default function WeatherTemperature(props) {
                             <p><span className="weatherValue">{Math.round(props.data.wind)}</span> km/h</p>
                             <FontAwesomeIcon icon="wind" />
                         </div>
-                </div>       
+                </div> 
+                <div className="WeatherForecast mt-3 mb-2">
+                        <WeatherForecast unit="fahrenheit" city={props.data.city} timezoneDifference={props.data.timezoneDifference}/>
+                </div>      
             </div>  
             );
     }

@@ -1,12 +1,13 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-import WeatherForecast from "./WeatherForecast"
+
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import Time from "./Time"
 import Timezone from "./Timezone"
+import CityIcon from "./CityIcon"
 
 import "./WeatherCard.css"
 
@@ -47,15 +48,14 @@ export default function WeatherCard(props) {
                         <div className="col">
                             <h5><small><FontAwesomeIcon icon="map-marker-alt" /></small>{" "}{props.data.city},</h5>
                             <h6>{props.data.country}</h6>
+                            <CityIcon city={props.data.city} />
                         </div>
                     </div>
                     <div className="WeatherInfo">
                         <WeatherIcon code={props.data.icon} alt={props.data.description} />
                         <WeatherTemperature data={props.data} />              
                     </div>
-                    <div className="WeatherForecast mt-3 mb-2">
-                        <WeatherForecast city={props.data.city} timezoneDifference={props.data.timezoneDifference}/>
-                    </div>                
+               
                     Last updated at <Time time={props.data.update} /> (UTC)
                 </div>                
             </div>
