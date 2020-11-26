@@ -9,8 +9,6 @@ const codeMapping = {
     "01n": { description: "CLEAR_NIGHT", color: '#6C93C9'},
     "02d": { description: "PARTLY_CLOUDY_DAY", color: '#F8F587'},
     "02n": { description: "PARTLY_CLOUDY_NIGHT", color: '#6C93C9'},
-    "02d": { description: "PARTLY_CLOUDY_DAY", color: '#F8F587'},
-    "02n": { description: "PARTLY_CLOUDY_NIGHT", color: '#6C93C9'},
     "03d": { description: "PARTLY_CLOUDY_DAY", color: '#F8F587'},
     "03n": { description: "PARTLY_CLOUDY_NIGHT", color: '#6C93C9'},
     "04d": { description: "CLOUDY", color: 'white'},

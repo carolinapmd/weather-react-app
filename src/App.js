@@ -46,9 +46,9 @@ export default function App() {
           <footer className="mt-5">
             <p>
             💻This project was coded by {" "}
-            <a href="linkedin.com/in/carolina-domingues" target="_blank">Carolina Domingues</a>
+            <a href="linkedin.com/in/carolina-domingues" target="_blank" rel="noreferrer">Carolina Domingues</a>
             , and is open-sourced on{" "}
-            <a href="https://github.com/carolinapmd/weather-react-app" target="_blank"> GitHub.</a>
+            <a href="https://github.com/carolinapmd/weather-react-app" target="_blank" rel="noreferrer"> GitHub.</a>
             </p>
             <small>
             <a href='https://pngtree.com/free-backgrounds'>Free background photos frompngtree.com</a> | City Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

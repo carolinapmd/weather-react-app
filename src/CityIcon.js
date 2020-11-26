@@ -12,10 +12,15 @@ export default function CityIcon(props) {
 
     let CityIcon = cityMapping[props.city]
 
-        return (<div className="CityIcon">
+       if(CityIcon) {
+
+           return (<div className="CityIcon">
             <img src={CityIcon} alt={`${props.city} Icon`} />
         </div>
         );
+    } else {
+        return null;
+    }
 
        
 
