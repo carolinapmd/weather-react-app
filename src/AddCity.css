@@ -1,4 +1,4 @@
-.PlusCity .card-body {
+.AddCity .card-body {
     height: 600px;
     width: 300px;
     border: none;
@@ -11,7 +11,7 @@
 
 }
 
-.PlusCity button {
+.AddCity button {
   height: 150px;
   width: 150px;
   font-size: 50px;
@@ -20,7 +20,7 @@
 }
 
 
-.PlusCity .fa-plus {
+.AddCity .fa-plus {
     color: rgb(181, 180, 180);
     
 }

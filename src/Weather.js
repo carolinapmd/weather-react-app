@@ -62,9 +62,11 @@ export default function Weather(props){
 
     if (weatherData.searched) {
         return (
-            <div className="Weather col">              
+            <div className="Weather">
+                            
                     {form} 
                     <WeatherCard data={weatherData} />        
+                  
             </div>
         );
     } else {

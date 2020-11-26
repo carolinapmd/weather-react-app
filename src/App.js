@@ -1,7 +1,6 @@
 import React from "react";
-import "./Fontawesome";
 import Weather from "./Weather"
-import PlusCity from "./PlusCity"
+import AddCity from "./AddCity"
 
 
 
@@ -37,8 +36,10 @@ export default function App() {
             </div>
           </div>
           <div className = "weatherSection row">
+            <div className = "col">
             <Weather defaultCity="Tokyo"/>
-            <PlusCity  defaultCity="Paris"/>
+            </div>
+            <AddCity  defaultCity="Paris"/>
           </div>
           
           <footer className="mt-5">
