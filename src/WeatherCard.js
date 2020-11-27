@@ -1,12 +1,13 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import CityIcon from "./CityIcon"
+import Time from "./Time"
+import Timezone from "./Timezone"
 
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import Time from "./Time"
-import Timezone from "./Timezone"
 
 
 import "./WeatherCard.css"
@@ -48,7 +49,7 @@ export default function WeatherCard(props) {
                         <div className="col">
                             <h5><small><FontAwesomeIcon icon="map-marker-alt" /></small>{" "}{props.data.city},</h5>
                             <h6>{props.data.country}</h6>
-                            
+                            <CityIcon city={props.data.city} />
                         </div>
                     </div>
                     <div className="WeatherInfo">
