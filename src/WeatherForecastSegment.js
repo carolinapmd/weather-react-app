@@ -1,8 +1,8 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon"
-import Time from "./Time"
+import WeatherIcon from "./WeatherIcon";
+import Time from "./Time";
 
-import "./WeatherForecastSegment.css"
+import "./WeatherForecastSegment.css";
 
 export default function WeatherForecastSegment(props) {
 
@@ -16,7 +16,7 @@ function temperature() {
         return `${Math.round(props.list.main.temp_min * 9/5 + 32)} | ${Math.round(props.list.main.temp_max * 9/5 + 32)}ºF`
         
     }
-}
+};
 
 
     return(

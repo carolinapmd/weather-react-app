@@ -128,6 +128,8 @@ export default function CityIcon(props) {
                                                                                                   "Quezon City":     QuezonCity,    "Reykjavík":     Reykjavík ,    "Rio de Janeiro":     RioDeJaneiro ,    "Rome":     Rome ,    "Samarra":     Samarra,    "Santa Marta" :     SantaMarta  ,    "Santorini":     Santorini ,    "Seattle":     Seattle ,    "Segovia":     Segovia,    "Sevilla":     Sevilla ,    "Skanderborg":     Skanderborg ,    "Smeaton":     Smeaton ,    "Sydney":     Sydney ,    "Taiwan":     Taiwan ,    "Teotihuacan":     Teotihuacan ,    "Thessaloniki":     Thessaloniki ,    "Tokyo":    Tokyo ,    "Toronto":     Toronto ,    "Tulum":     Tulum ,    "Turin":     Turin ,    "Uxmal":     Uxmal ,    "Washington":     Washington ,    "Wat Muan":     WatMuang ,    "Zarago":     Zaragoza     }
     
 
+
+
     let CityIcon = cityMapping[props.city]
 
        if(CityIcon) {

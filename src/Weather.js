@@ -5,7 +5,6 @@ import WeatherCard from "./WeatherCard";
 
 
 import "./Weather.css"
-import { faSortNumericUp } from "@fortawesome/free-solid-svg-icons";
 
 
 
