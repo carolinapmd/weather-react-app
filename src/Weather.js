@@ -75,7 +75,7 @@ export default function Weather(props){
                 </form>
             </div>
             <div className="col-2">
-                <button className="btn btn-info " title="Geolocation" onClick={getCurrentLocation}><FontAwesomeIcon icon="compass" /></button>                      
+                <button className="btn btn-info " title="Geolocation" onClick={getCurrentLocation}><FontAwesomeIcon icon="compass" spin /></button>                      
             </div>
         </div>
     );
@@ -92,7 +92,7 @@ export default function Weather(props){
     } else {
         search();
         return (
-        <div className="Weather col">
+        <div className="Weather col">            
           <FontAwesomeIcon icon="spinner" pulse size={"3x"} />
         </div>
         );

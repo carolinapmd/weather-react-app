@@ -59,7 +59,7 @@ export default function App() {
           
           <footer className="mt-5">
             <p>
-            💻This project was coded by {" "}
+            💻{"  "} This project was coded by {" "}
             <a href="https://linkedin.com/in/carolina-domingues" target="_blank" rel="noreferrer">Carolina Domingues</a>
             , and is open-sourced on{" "}
             <a href="https://github.com/carolinapmd/weather-react-app" target="_blank" rel="noreferrer"> GitHub.</a>
