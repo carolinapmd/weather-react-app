@@ -32,7 +32,7 @@ export default function WeatherForecast(props) {
 
     } else {
         let apiKey = "76184a71275816c9e0d0b09aa75a7bcf"
-        let apiUrl= `http://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`
+        let apiUrl= `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`
         axios.get(apiUrl).then(handleForecastResponse);
 
         return null;
