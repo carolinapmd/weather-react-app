@@ -47,7 +47,7 @@ import Paris from "./img/png/Paris.png";
 import Pisa from "./img/png/Pisa.png";
 import Pula from "./img/png/Pula.png";
 import QuezonCity from "./img/png/Quezon City.png";
-import Reykjavík from "./img/png/Reykjavík.png";
+import Reykjavik from "./img/png/Reykjavík.png";
 import RioDeJaneiro from "./img/png/Rio de Janeiro.png";
 import Rome from "./img/png/Rome.png";
 import Samarra from "./img/png/Samarra.png";
@@ -104,8 +104,8 @@ export default function CityIcon(props) {
     "Hatsukaichi": Hatsukaichi,
     "Jakarta": Jakarta,
     "Kashgar":     Kashgar ,
-                        "Kuala Lumpur":     KualaLumpur ,
-                            "Lahore":     Lahore,
+    "Kuala Lumpur":     KualaLumpur ,
+    "Lahore":     Lahore,
                                 "Lisbon":     Lisbon ,
                                     "London":     London,
                                         "Los Angeles":     LosAngeles ,
@@ -123,7 +123,7 @@ export default function CityIcon(props) {
                                                                                       "Paris":     Paris ,
                                                                                           "Pisa":     Pisa,
                                                                                               "Pula":     Pula ,
-                                                                                                  "Quezon City":     QuezonCity,    "Reykjavík":     Reykjavík ,    "Rio de Janeiro":     RioDeJaneiro ,    "Rome":     Rome ,    "Samarra":     Samarra,    "Santa Marta" :     SantaMarta  ,    "Santorini":     Santorini ,    "Seattle":     Seattle ,    "Segovia":     Segovia,    "Sevilla":     Sevilla ,    "Skanderborg":     Skanderborg ,    "Smeaton":     Smeaton ,    "Sydney":     Sydney ,    "Taiwan":     Taiwan ,    "Teotihuacan":     Teotihuacan ,    "Thessaloniki":     Thessaloniki ,    "Tokyo":    Tokyo ,    "Toronto":     Toronto ,    "Tulum":     Tulum ,    "Turin":     Turin ,    "Uxmal":     Uxmal ,    "Washington":     Washington ,    "Wat Muan":     WatMuang ,    "Zarago":     Zaragoza     }
+                                                                                                  "Quezon City":     QuezonCity,    "Reykjavik":     Reykjavik ,    "Rio de Janeiro":     RioDeJaneiro ,    "Rome":     Rome ,    "Samarra":     Samarra,    "Santa Marta" :     SantaMarta  ,    "Santorini":     Santorini ,    "Seattle":     Seattle ,    "Segovia":     Segovia,    "Sevilla":     Sevilla ,    "Skanderborg":     Skanderborg ,    "Smeaton":     Smeaton ,    "Sydney":     Sydney ,    "Taiwan":     Taiwan ,    "Teotihuacan":     Teotihuacan ,    "Thessaloniki":     Thessaloniki ,    "Tokyo":    Tokyo ,    "Toronto":     Toronto ,    "Tulum":     Tulum ,    "Turin":     Turin ,    "Uxmal":     Uxmal ,    "Washington":     Washington ,    "Wat Muan":     WatMuang ,    "Zarago":     Zaragoza     }
     
 
 

@@ -26,7 +26,7 @@ export default function App() {
               <div className="col-8">
               </div>
             </div>
-            <h1>Check the Weather for different cities in the world!</h1>
+            <h1>Check the Weather for different cities around the world!</h1>
             <div className="row">
               <div className="col-6">
                 
