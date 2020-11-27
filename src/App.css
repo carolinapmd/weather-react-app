@@ -9,7 +9,7 @@
 }
 
 .App .container h1 {
-  color: #2b8298;
+  color: #4aa7c1;
   margin: 15px auto;
   font-weight: bold;
 }
@@ -22,4 +22,5 @@
 
 .App footer {
   font-size: 15px;
+  color: seashell
 }

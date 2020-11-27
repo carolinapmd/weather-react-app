@@ -5,7 +5,7 @@ import AddCity from "./AddCity"
 
 
 
-import logo from "./img/3.png";
+import logo from "./img/2.png";
 import './App.css';
 
 
