@@ -25,7 +25,6 @@ import EasterIsland from "./img/png/Easter Island.png";
 import Galata from "./img/png/Galata.png";
 import Giza from "./img/png/Giza.png";
 import Hatsukaichi from "./img/png/Hatsukaichi.png";
-import Istanbul from "./img/png/Istanbul.png";
 import Jakarta from "./img/png/Jakarta.png";
 import Kashgar from "./img/png/Kashgar.png";
 import KualaLumpur from "./img/png/Kuala Lumpur.png";
@@ -103,7 +102,6 @@ export default function CityIcon(props) {
     "Galata":    Galata,
     "Giza":     Giza ,
     "Hatsukaichi": Hatsukaichi,
-    "Istanbul": Istanbul,
     "Jakarta": Jakarta,
     "Kashgar":     Kashgar ,
                         "Kuala Lumpur":     KualaLumpur ,
